@@ -1,0 +1,17 @@
+.publicworkSection1 {
+  display: flex;
+  padding: 5% 20%;
+}
+.section1-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 3rem;
+  padding: 5% 10%;
+}
+.section1-image > img {
+  -webkit-box-shadow: 15px 15px 0px 3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 15px 15px 0px 3px rgba(0, 0, 0, 1);
+  box-shadow: 15px 15px 0px 3px rgba(0, 0, 0, 1);
+}
