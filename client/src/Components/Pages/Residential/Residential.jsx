@@ -114,6 +114,7 @@ function Residential() {
             <img src={Slider5} alt="Slider 5" />
           </div>
           <div>
+            <div></div>
             <img src={Slider6} alt="Slider 6" />
           </div>
           <div>
