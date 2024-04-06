@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/brandLogo.jpeg";
 import "./Header.css";
 const Header = () => {
   const navItems = [
@@ -20,10 +21,6 @@ const Header = () => {
       link: "/residential",
     },
     {
-      name: "Public-Work",
-      link: "/public-work",
-    },
-    {
       name: "Multi-Family",
       link: "/multi-family",
     },
@@ -38,17 +35,17 @@ const Header = () => {
       <header className="outerContainer">
         <div className="logo">
           <img
-            src="https://static.wixstatic.com/media/cb2f73_7fa3963592cb438fb089a62b6905b7b3~mv2.png/v1/fill/w_134,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/earvin%20logo%20png-2.png"
+            src={logo}
             alt="Logo"
-            style={{ width: "100%" }}
+            style={{ width: "100%", height: "100%", borderRadius: "100%" }}
           />
         </div>
         <div className="pageInfo">
           <div className="companyName">
-            <h1>R&L QUALITY PAINTING</h1>
+            <h1>Andes Painting Company</h1>
           </div>
           <div className="companySlogan">
-            <p>The First Choice in Professional Painting</p>
+            <p>Crafting Elegance, One Brushstroke at a Time</p>
           </div>
         </div>
         <div className="pagesRoutes">

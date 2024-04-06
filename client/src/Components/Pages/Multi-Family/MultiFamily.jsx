@@ -128,6 +128,7 @@ function MultiFamily() {
           <div>
             <img src={Slider8} alt="Slider 8" />
           </div>
+          <div></div>
         </Slider>
       </div>
     </>

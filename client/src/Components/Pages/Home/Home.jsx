@@ -21,10 +21,7 @@ const Home = () => {
       name: "Residential",
       link: "/residential",
     },
-    {
-      name: "Public-Work",
-      link: "/public-work",
-    },
+
     {
       name: "Multi-Family",
       link: "/multi-family",
@@ -54,7 +51,7 @@ const Home = () => {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className="whoWeAre">
+      <div className="whoWeAre" style={{ backgroundColor: "" }}>
         <div className="whoWeAreImage">
           <img src={image1} alt="" style={{ width: "100%" }} />
         </div>
@@ -125,7 +122,9 @@ const Home = () => {
                   to={service.link}
                   style={{ textDecoration: "none", paddingTop: "15%" }}
                 >
-                  <span>Learn More</span>
+                  <span style={{ color: "black", fontWeight: "400" }}>
+                    Learn More
+                  </span>
                 </Link>
               </div>
             ))}

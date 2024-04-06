@@ -1,0 +1,33 @@
+.bookingWrapper {
+  margin: 6% 20%;
+}
+.bookingWrapper > ol {
+  list-style-type: none;
+}
+
+.bookingInnerWrapper > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5% 0%;
+}
+.bookingInnerWrapper > li {
+  border-bottom: 1px solid;
+}
+.linkTo {
+  width: 20%;
+  font-size: 20px;
+  text-decoration: none;
+}
+.linkTo > p {
+  background-color: black;
+  text-align: center;
+  padding: 1% 2%;
+}
+.linkTo > a:hover,
+:link,
+:visited {
+  color: whitesmoke;
+}

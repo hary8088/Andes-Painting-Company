@@ -8,10 +8,10 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 function Footer() {
   return (
     <>
-      <div className="footerWrapper" style={{ marginTop: "2%" }}>
+      <div className="footerWrapper">
         <div className="content">
           <div className="innerWrapper">
-            <h2>R&L QUALITY PAINTING</h2>
+            <h2>Andes Painting Company</h2>
           </div>
           <div className="innerWrapper">
             <span className="topic">Address</span>
@@ -19,8 +19,8 @@ function Footer() {
           </div>
           <div className="innerWrapper">
             <span className="topic">Contact</span>
-            <p>earvin@rlqualitypainting.com</p>
-            <p>Office: 657-234-0101</p>
+            <p>----@andespainting.com</p>
+            <p>Contact: 703-283-7446</p>
           </div>
           <div className="innerWrapper">
             <span className="topic">Follow</span>
@@ -38,10 +38,11 @@ function Footer() {
           </div>
         </div>
         <div className="copyright">
-          <span>
-            <CopyrightIcon style={{ width: "20px" }} />
-          </span>
-          <p>by R&L Quality Painting</p>
+          {/* <span>
+            <CopyrightIcon style={{ width: "20px", color: "whitesmoke" }} />
+          </span> */}
+          ©&nbsp;2024,&nbsp;Andes Painting Company Pvt. Ltd. All Rights
+          Reserved.
         </div>
       </div>
     </>

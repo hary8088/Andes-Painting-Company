@@ -81,14 +81,16 @@ function About() {
                   gap: "20px",
                 }}
               >
-                <h3>{member.name}</h3>
+                <h3 style={{ fontWeight: "700" }}>{member.name}</h3>
                 <span>{member.position}</span>
                 <p style={{ width: "100%" }}>{member.experience}</p>
                 <Link
                   to={member.contact}
                   style={{ textDecoration: "none", color: "black" }}
                 >
-                  Contact Me
+                  <p style={{ fontSize: "20px", fontWeight: "400" }}>
+                    Contact Me
+                  </p>
                 </Link>
               </div>
             </div>

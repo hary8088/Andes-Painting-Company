@@ -81,7 +81,7 @@ function Commercial() {
         </div>
       </div>
       <div className="commercialSection3">
-        <ul className="serviceList">
+        <ul className="commercialServiceList">
           {services.map((service, index) => (
             <li key={index}>{service}</li>
           ))}

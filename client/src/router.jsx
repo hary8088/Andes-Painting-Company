@@ -5,9 +5,9 @@ import PageLayout from "./Components/PageLayout/PageLayout";
 import About from "./Components/Pages/About/About";
 import Commercial from "./Components/Pages/Commercial/Commercial";
 import Residential from "./Components/Pages/Residential/Residential";
-import PublicWork from "./Components/Pages/Public-Work/PublicWork";
 import MultiFamily from "./Components/Pages/Multi-Family/MultiFamily";
 import BookOnline from "./Components/Pages/Book-Online/BookOnline";
+import BookingTemplate from "./Components/Pages/Book-Online/BookingTemplate/BookingTemplate";
 const router = () => {
   return (
     <>
@@ -17,9 +17,18 @@ const router = () => {
           <Route path="/about" element={<About />} />
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/residential" element={<Residential />} />
-          <Route path="/public-work" element={<PublicWork />} />
           <Route path="/multi-family" element={<MultiFamily />} />
           <Route path="/book-online" element={<BookOnline />} />
+          <Route path="/bookCommercialExterior" element={<BookingTemplate />} />
+          <Route path="/bookCommercialInterior" element={<BookingTemplate />} />
+          <Route
+            path="/bookResidentialExterior"
+            element={<BookingTemplate />}
+          />
+          <Route
+            path="/bookResidentialInterior"
+            element={<BookingTemplate />}
+          />
         </Route>
       </Routes>
     </>

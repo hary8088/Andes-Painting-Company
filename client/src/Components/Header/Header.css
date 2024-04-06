@@ -1,24 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 * {
   margin: 0%;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .outerContainer {
-  /* background-color: beige; */
-  margin-top: 1%;
+  padding: 1% 0%;
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  background-color: black;
+  color: whitesmoke;
 }
 
 .logo {
-  width: fit-content;
+  width: 10%;
 }
-.logo > img {
-  width: 100%;
-}
+
 .pageInfo {
   display: flex;
   flex-direction: column;
@@ -33,10 +37,11 @@
 
   border-bottom: 2px solid transparent;
 }
-a:hover {
+
+a:hover,
+:link,
+:visited {
   transition: 1s;
-  border-bottom-color: black;
-}
-a:visited {
-  color: black;
+  color: whitesmoke;
+  border-bottom-color: whitesmoke;
 }

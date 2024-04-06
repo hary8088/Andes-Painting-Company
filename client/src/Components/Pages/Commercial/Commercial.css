@@ -38,37 +38,25 @@
   color: black;
 }
 .commercialSection3 {
-  padding: 2%;
+  padding: 2% 8%;
   overflow: hidden;
 }
 
-.serviceList {
+.commercialServiceList {
   list-style: none;
-  padding: 0;
-  white-space: nowrap;
-  animation: scrollText 15s linear infinite;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* align-items: baseline; */
+  background-color: rgb(245, 245, 245);
 }
 
-@keyframes scrollText {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.serviceList > li {
-  display: inline-block;
-  margin-right: 20px;
+.commercialServiceList > li {
   padding: 10px 15px;
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 20px;
+  /* background-color: rgb(245, 245, 245); */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
-.serviceList li:last-child {
-  margin-right: 0;
-}
+
 .commercialSection4 {
   width: 100%;
   background-color: rgb(245, 245, 245);
