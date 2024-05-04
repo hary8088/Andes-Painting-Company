@@ -1,0 +1,56 @@
+.confirmSlotWrapper {
+  margin: 6% 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.bookDetailsWrapper {
+  display: flex;
+  width: 100%;
+  height: 80svh;
+}
+.formWrapper,
+.currentBookingDetail {
+  width: 100%;
+  height: inherit;
+}
+.formWrapper {
+  padding: 0% 2%;
+
+  max-width: 65%;
+}
+.currentBookingDetail {
+  max-width: 35%;
+  /* background-color: whitesmoke; */
+}
+/* .formHeader {
+  padding: 0% 2%;
+} */
+.formRow {
+  width: inherit;
+  display: flex;
+  gap: 15px;
+}
+.customerForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.detailsOfBooking {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 0%;
+}
+.finalSubmit {
+  text-align: center;
+  width: 100%;
+  padding: 2% 10%;
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+}
+.finalSubmit:hover {
+  background-color: black;
+  color: white;
+}

@@ -94,15 +94,15 @@ function MultiFamily() {
           <span>OUR SERVICES</span>
         </div>
       </div>
-      <div className="multifamilySection3">
+      {/* <div className="multifamilySection3">
         <ul className="serviceList">
           {services.map((service, index) => (
             <li key={index}>{service}</li>
           ))}
         </ul>
-      </div>
+      </div> */}
       <div className="multifamilySection4">
-        <span>Portfolio</span>
+        {/* <span>Portfolio</span> */}
         <Slider {...settings}>
           <div>
             <img src={Slider1} alt="Slider 1" />

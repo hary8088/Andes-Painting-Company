@@ -80,15 +80,15 @@ function Commercial() {
           <span>OUR SERVICES</span>
         </div>
       </div>
-      <div className="commercialSection3">
+      {/* <div className="commercialSection3">
         <ul className="commercialServiceList">
           {services.map((service, index) => (
             <li key={index}>{service}</li>
           ))}
         </ul>
-      </div>
+      </div> */}
       <div className="commercialSection4">
-        <span>Portfolio</span>
+        {/* <span>Portfolio</span> */}
         <Slider {...settings}>
           <div>
             <img src={Slider1} alt="Slider 1" />
