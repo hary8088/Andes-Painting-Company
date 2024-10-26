@@ -1,0 +1,58 @@
+//====================Admin Request=====================
+//Add Slots
+PUT http://localhost:3033/admin/addSlot
+Content-Type: application/json
+
+{
+    "slot" : "1PM"
+}
+
+###
+
+
+
+
+###
+
+
+//==================User Requests====================
+GET http://127.0.0.1:3033/users
+
+###
+//Get User details
+PUT http://localhost:3033/users/addUser
+Content-Type: application/json
+
+{
+    "name":"Hari",
+    "email":"hari@zmail.com",
+    "phoneNo":"9952598419",
+    "street":"1/66 avenue",
+    "city":"Irvine",
+    "state":"california"
+} 
+###
+
+//Get Available Slots
+GET http://localhost:3033/users/getAvailableSlots?date=1715345333846
+
+
+###
+
+
+//Book Slots
+POST http://localhost:3033/users/bookSlot
+Content-Type: application/json
+
+{
+    "name":"Vicky",
+    "email":"vignesh@zmail.com",
+    "phoneNo":"9312598419",
+    "street":"212",
+    "city":"Irvine",
+    "state":"california",
+    "slotId" : "66462e0c6803bdfca500b26d",
+    "date":"1715345333846"
+}
+
+###

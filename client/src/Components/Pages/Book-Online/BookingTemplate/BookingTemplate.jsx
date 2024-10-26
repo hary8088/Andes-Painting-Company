@@ -79,20 +79,23 @@ function BookingTemplate({ serviceName, serviceType }) {
   }, [selectedDate]);
 
   useEffect(() => {
-    setIsSlotLoading(true);
-    setIsSlotAvailable(true);
-    setSlots(["9AM", "10AM", "11AM", "12PM", "2PM", "3PM", "4PM", "5PM"]);
-    // Axios.get("http://localhost:3033/users", {
-    //   date: selectedDate.valueOf(),
-    // })
-    //   .then((response) => {
-    //     setIsSlotLoading(true);
-    //     setIsSlotAvailable(response.data.slots.length > 0);
-    //     setSlots(response.data.slots);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
+    console.log(selectedDate.valueOf());
+    // setIsSlotLoading(true);
+    // setIsSlotAvailable(true);
+    // setSlots(["9AM", "10AM", "11AM", "12PM", "2PM", "3PM", "4PM", "5PM"]);
+    Axios.get(
+      "http://localhost:3033/users/getAvailableSlots?date=" +
+        selectedDate.valueOf() +
+        "&name=Hari"
+    )
+      .then((response) => {
+        setIsSlotLoading(true);
+        setIsSlotAvailable(response.data.slots.length > 0);
+        setSlots(response.data.slots);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, [selectedDate]);
 
   return (
